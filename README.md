@@ -15,17 +15,51 @@ npm install --save form2
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'form2'
+import Form2 from 'form2'
 
-class Example extends Component {
+export default class App extends Component {
+  getFields = () => {
+    const fields = [
+      {
+        type: 'text',
+        name: 'username',
+        placeholder: 'Type Username..',
+        id: 'username'
+      }]
+    return fields
+  };
+
   render () {
     return (
-      <MyComponent />
+      <div>
+        <Form2 fields={this.getFields()} />
+      </div>
     )
   }
 }
+
 ```
 
+## Field Types Supported
+ - Text field
+ 
+ ## Options
+ Options can be added on the fields options:
+ ```jsx
+ const myFields = [{ OPTIONS_HERE_AS_OBJECT_PROPERTIES }];
+```
+and you should send the `myFields` array as a `fields` props on the form2 component
+```jsx
+<Form2 fields={myField} />
+```
+
+### The fields options by type:
+ - #### Text: 
+   - type: required, should be => 'text'
+   - placeholder: required, string
+   - name: required, string
+   - id: not required, string or number
+  
 ## License
 
 MIT © [mhmdtshref](https://github.com/mhmdtshref)
