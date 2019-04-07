@@ -1,12 +1,29 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'form2'
+import Form from 'form2'
 
 export default class App extends Component {
+  getFields = () => {
+    const fields = [
+      {
+        type: 'text',
+        name: 'username',
+        placeholder: 'Type Username..',
+        id: 'username'
+      },
+      {
+        type: 'text',
+        name: 'password',
+        placeholder: 'Type Password..',
+        id: 'password'
+      }]
+    return fields
+  };
+
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <Form fields={this.getFields()} />
       </div>
     )
   }
