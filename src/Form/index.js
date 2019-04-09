@@ -5,7 +5,7 @@ class Form extends Component {
     super(props)
     this.state = {
       values: {}
-    };
+    }
   };
 
   setStateValue = (name, value) => {
@@ -13,14 +13,24 @@ class Form extends Component {
   };
 
   setEventToState = ({ target }) => {
-    this.setStateValue([target.name], target.value);
+    this.setStateValue([target.name], target.value)
   };
+
+  renderTextField = (field) => {
+    return <input
+      // Required props:
+      type='text'
+      name={field.name}
+      {...field}
+      onChange={this.setEventToState}
+    />
+  }
 
   renderFields = (fields) => {
     return fields.map((field) => {
       switch (field.type) {
         case 'text':
-          return <input type='text' key={field.name} name={field.name} placeholder={field.placeholder} id={field.id ? field.id : ''} onChange={this.setEventToState} />
+          return this.renderTextField(field)
       }
     })
   };
