@@ -17,12 +17,12 @@ class Form extends Component {
   };
 
   renderTextField = (field) => {
+    field.onChange = field.onChange ? (event) => { this.setEventToState(event); field.onChange(event) } : this.setEventToState;
     return <input
       // Required props:
       type='text'
       name={field.name}
       {...field}
-      onChange={this.setEventToState}
     />
   }
 
