@@ -18,7 +18,7 @@ class Form extends Component {
 
   renderTextField = (field) => {
     const onChange = field.onChange2 ? (event) => { field.onChange2(event); this.setEventToState(event) } : this.setEventToState
-    delete field.onChange;
+    delete field.onChange2;
     return <input
       // Required props:
       type='text'
