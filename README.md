@@ -64,6 +64,7 @@ and you should send the `myFields` array as a `fields` props on the form2 compon
 ### The fields options by type:
  - #### Text: 
    - type: required, should be => 'text'
+   - name: required, string
    - Any input props (e.g: className, id, key, disabled ...)
   
 ## License
