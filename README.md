@@ -13,26 +13,34 @@ npm install --save form2
 ## Usage
 
 ```jsx
+
 import React, { Component } from 'react'
 
-import Form2 from 'form2'
+import Form from 'form2'
+import './App.css'
 
 export default class App extends Component {
-  getFields = () => {
-    const fields = [
-      {
-        type: 'text',
-        name: 'username',
-        placeholder: 'Type Username..',
-        id: 'username'
-      }]
-    return fields
-  };
-
   render () {
     return (
       <div>
-        <Form2 fields={this.getFields()} />
+        <Form fields={
+          [
+            {
+              type: 'text',
+              name: 'username',
+              placeholder: 'Type Username..',
+              id: 'username',
+              className: 'textField',
+              onChange: (event) => { console.log(`VALUE IS: ${event.target.value}`) }
+            },
+            {
+              type: 'text',
+              name: 'password',
+              placeholder: 'Type Password..',
+              id: 'password',
+              className: 'textField'
+            }]
+        } />
       </div>
     )
   }
@@ -56,9 +64,7 @@ and you should send the `myFields` array as a `fields` props on the form2 compon
 ### The fields options by type:
  - #### Text: 
    - type: required, should be => 'text'
-   - placeholder: required, string
-   - name: required, string
-   - id: not required, string or number
+   - Any input props (e.g: className, id, key, disabled ...)
   
 ## License
 
