@@ -16,23 +16,30 @@ class Form extends Component {
     this.setStateValue([target.name], target.value)
   };
 
-  renderTextField = (field) => {
-    const onChange = field.onChange2 ? (event) => { field.onChange2(event); this.setEventToState(event) } : this.setEventToState
-    delete field.onChange2;
-    return <input
-      // Required props:
-      type='text'
-      name={field.name}
-      onChange={onChange}
-      {...field}
-    />
+  renderTextField = (field, index) => {
+    field.key = field.key ? field.key : index
+    if (field.onChange) {
+      return <input
+        type='text'
+        name={field.name}
+        onChange={(event) => { field.onChange(event); this.setEventToState(event) }}
+        {...field}
+      />
+    } else {
+      return <input
+        type='text'
+        name={field.name}
+        onChange={this.setEventToState}
+        {...field}
+      />
+    }
   }
 
   renderFields = (fields) => {
-    return fields.map((field) => {
+    return fields.map((field, index) => {
       switch (field.type) {
         case 'text':
-          return this.renderTextField(field)
+          return this.renderTextField(field, index)
       }
     })
   };
