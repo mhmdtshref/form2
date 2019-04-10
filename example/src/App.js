@@ -15,6 +15,7 @@ export default class App extends Component {
               placeholder: 'Type Username..',
               id: 'username',
               className: 'textField',
+              // eslint-disable-next-line no-console
               onChange: (event) => { console.log(`VALUE IS: ${event.target.value}`) }
             },
             {

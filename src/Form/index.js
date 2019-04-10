@@ -6,7 +6,7 @@ class Form extends Component {
     this.state = {
       values: {}
     }
-  };
+  }
 
   setStateValue = (name, value) => {
     this.setState((prevState) => ({...prevState.values, [name]: value}))
@@ -49,6 +49,6 @@ class Form extends Component {
       {this.renderFields(this.props.fields)}
     </form>
   }
-};
+}
 
 export default Form
