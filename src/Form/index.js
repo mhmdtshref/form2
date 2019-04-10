@@ -17,11 +17,13 @@ class Form extends Component {
   };
 
   renderTextField = (field) => {
-    field.onChange = field.onChange ? (event) => { this.setEventToState(event); field.onChange(event) } : this.setEventToState;
+    const onChange = field.onChange2 ? (event) => { field.onChange2(event); this.setEventToState(event) } : this.setEventToState
+    delete field.onChange;
     return <input
       // Required props:
       type='text'
       name={field.name}
+      onChange={onChange}
       {...field}
     />
   }
