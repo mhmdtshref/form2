@@ -15,7 +15,7 @@ export default class App extends Component {
               placeholder: 'Type Username..',
               id: 'username',
               className: 'textField',
-              onChange: (event) => { console.log(`VALUE IS: ${event.target.value}`) }
+              onChange2: (event) => { console.log(`VALUE IS: ${event.target.value}`) }
             },
             {
               type: 'text',
