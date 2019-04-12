@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check form text field Field of type text 1`] = `
+<form>
+  <input
+    name="username"
+    onChange={[Function]}
+    type="text"
+  />
+</form>
+`;
+
+exports[`Check form text field Field of type text with onChange function in the props  1`] = `
+<form>
+  <input
+    name="username"
+    onChange={[Function]}
+    type="text"
+  />
+</form>
+`;
+
+exports[`Check form text field Field of type text with placeholder in props 1`] = `
+<form>
+  <input
+    name="username"
+    onChange={[Function]}
+    placeholder="Username here.."
+    type="text"
+  />
+</form>
+`;
