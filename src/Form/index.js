@@ -44,9 +44,14 @@ class Form extends Component {
     })
   };
 
+
+  renderChildren = () => {
+    return this.props.children;
+  };
+
   render() {
     return <form>
-      {this.renderFields(this.props.fields)}
+      { this.renderChildren() }
     </form>
   }
 }
