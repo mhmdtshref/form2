@@ -8,8 +8,8 @@ export default class App extends Component {
     return (
       <div>
         <Form>
-          <TextField placeholder="Type your name..." />
-          <TextField placeholder="Type your email..." />
+          <TextField placeholder="Type your name..." name="x" />
+          <TextField placeholder="Type your email..." name="y" />
         </Form>
       </div>
     )
