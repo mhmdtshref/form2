@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Check form text field Field of type text 1`] = `
-<form>
+<form
+  onSubmit={[Function]}
+>
   <input
     name="username"
     onChange={[Function]}
@@ -16,7 +18,9 @@ exports[`Check form text field Field of type text 1`] = `
 `;
 
 exports[`Check form text field Field of type text with onChange function in the props  1`] = `
-<form>
+<form
+  onSubmit={[Function]}
+>
   <input
     name="username"
     onChange={[Function]}
@@ -31,7 +35,9 @@ exports[`Check form text field Field of type text with onChange function in the 
 `;
 
 exports[`Check form text field Field of type text with placeholder in props 1`] = `
-<form>
+<form
+  onSubmit={[Function]}
+>
   <input
     name="username"
     onChange={[Function]}
