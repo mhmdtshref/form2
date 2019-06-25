@@ -5,7 +5,12 @@ exports[`Check form text field Field of type text 1`] = `
   <input
     name="username"
     onChange={[Function]}
-    type="text"
+    value=""
+  />
+  <input
+    name="password"
+    onChange={[Function]}
+    value=""
   />
 </form>
 `;
@@ -15,7 +20,12 @@ exports[`Check form text field Field of type text with onChange function in the 
   <input
     name="username"
     onChange={[Function]}
-    type="text"
+    value=""
+  />
+  <input
+    name="password"
+    onChange={[Function]}
+    value=""
   />
 </form>
 `;
@@ -25,8 +35,14 @@ exports[`Check form text field Field of type text with placeholder in props 1`] 
   <input
     name="username"
     onChange={[Function]}
-    placeholder="Username here.."
-    type="text"
+    placeholder="Username"
+    value=""
+  />
+  <input
+    name="email"
+    onChange={[Function]}
+    placeholder="email"
+    value=""
   />
 </form>
 `;

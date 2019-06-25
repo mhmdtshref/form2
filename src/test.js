@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Form from './Form';
+import TextField from "./TextField";
 
 describe('Check form text field', () => {
 
@@ -9,17 +10,26 @@ describe('Check form text field', () => {
   });
 
   it('Field of type text', () => {
-    const form = renderer.create(<Form fields={[ { type: 'text', name: 'username' }, ]} />).toJSON();
+    const form = renderer.create(<Form>
+      <TextField name="username" />
+      <TextField name="password" />
+    </Form>).toJSON();
     expect(form).toMatchSnapshot();
   });
 
   it('Field of type text with placeholder in props', () => {
-    const form = renderer.create(<Form fields={[ { type: 'text', name: 'username', placeholder: 'Username here..' }, ]} />).toJSON();
+    const form = renderer.create(<Form>
+      <TextField name="username" placeholder="Username"/>
+      <TextField name="email" placeholder="email" />
+    </Form>).toJSON();
     expect(form).toMatchSnapshot();
   });
 
   it('Field of type text with onChange function in the props ', () => {
-    const form = renderer.create(<Form fields={[ { type: 'text', name: 'username', onChange: (values) => { console.log(values); } }, ]} />).toJSON();
+    const form = renderer.create(<Form>
+      <TextField name="username" onChange={() => { console.log("Hello1"); }} />
+      <TextField name="password" onChange={() => { console.log("Hello2"); }} />
+    </Form>).toJSON();
     expect(form).toMatchSnapshot();
   });
 
