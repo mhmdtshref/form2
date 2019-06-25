@@ -9,7 +9,9 @@ class Form extends Component {
   }
 
   setStateValue = (name, value) => {
-    this.setState((prevState) => ({...prevState.values, [name]: value}))
+    this.setState((prevState) => ({...prevState.values, [name]: value}), () => {
+      console.log("STATE CHANGED:::", this.state);
+    })
   };
 
   setEventToState = ({ target }) => {
@@ -17,7 +19,7 @@ class Form extends Component {
   };
 
   renderTextField = (field, index) => {
-    field.key = field.key ? field.key : index
+    field.key = field.key ? field.key : index;
     if (field.onChange) {
       return <input
         type='text'
@@ -33,7 +35,7 @@ class Form extends Component {
         {...field}
       />
     }
-  }
+  };
 
   renderFields = (fields) => {
     return fields.map((field, index) => {
@@ -46,7 +48,8 @@ class Form extends Component {
 
 
   renderChildren = () => {
-    return this.props.children;
+    const { setStateValue } = this;
+    return this.props.children.map((child, key) => React.cloneElement(child, { formstate: setStateValue, key }));
   };
 
   render() {
