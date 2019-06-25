@@ -7,7 +7,7 @@ export default class App extends Component {
 
   onSubmit = (event) => {
     event.preventDefault();
-    console.log("THIS IS VALUES: ", event.target.values);
+    console.log("Submitted values are: ", event.target.values);
   };
 
   render () {
