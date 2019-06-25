@@ -49,7 +49,7 @@ class Form extends Component {
 
   renderChildren = () => {
     const { setStateValue } = this;
-    return this.props.children.map((child, key) => React.cloneElement(child, { formstate: setStateValue, key }));
+    return React.Children.toArray(this.props.children).map((child, key) => React.cloneElement(child, { formstate: setStateValue, key }));
   };
 
   render() {
