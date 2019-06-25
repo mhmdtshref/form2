@@ -1,2 +1,7 @@
 import Form from './Form'
-export default Form
+import TextField from './TextField';
+
+export {
+  Form,
+  TextField,
+};

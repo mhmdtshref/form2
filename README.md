@@ -2,6 +2,8 @@
 
 > React component to let you use form without use component state
 
+When you create form in React, You need to use state to handle values changes. This package helps you creating form and handle it's values on submit without need to set values to state. All what you have to do, is to call `onSubmit`, and the event.target.values will be an array contains fields values.
+
 [![NPM](https://img.shields.io/npm/v/form2.svg)](https://www.npmjs.com/package/form2) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
@@ -12,35 +14,21 @@ npm install --save form2
 
 ## Usage
 
-```jsx
+```js
 
 import React, { Component } from 'react'
 
-import Form from 'form2'
+import { Form, TextField } from 'form2';
 import './App.css'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <Form fields={
-          [
-            {
-              type: 'text',
-              name: 'username',
-              placeholder: 'Type Username..',
-              id: 'username',
-              className: 'textField',
-              onChange: (event) => { console.log(`VALUE IS: ${event.target.value}`) }
-            },
-            {
-              type: 'text',
-              name: 'password',
-              placeholder: 'Type Password..',
-              id: 'password',
-              className: 'textField'
-            }]
-        } />
+        <Form>
+          <TextField name="username" />
+          <TextField name="email" placeholder="Type correct email..." />
+         </Form>
       </div>
     )
   }
@@ -49,24 +37,13 @@ export default class App extends Component {
 ```
 
 ## Field Types Supported
- - Text field
+ - TextField
  
- ## Options
- Options can be added on the fields options:
- ```jsx
- const myFields = [{ OPTIONS_HERE_AS_OBJECT_PROPERTIES }];
+ ## Properties
+ Any property can be added to input, can also be added to our fields, ex:
+ ```jsx harmony
+  <TextField name="username" placeholder="Type Username..." />
 ```
-and you should send the `myFields` array as a `fields` props on the form2 component
-```jsx
-<Form2 fields={myField} />
-```
-
-### The fields options by type:
- - #### Text: 
-   - type: required, should be => 'text'
-   - name: required, string
-   - Any input props (e.g: className, id, key, disabled ...)
-  
 ## License
 
 MIT © [mhmdtshref](https://github.com/mhmdtshref)
