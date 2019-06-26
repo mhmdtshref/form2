@@ -7,6 +7,7 @@ export default class App extends Component {
 
   onSubmit = (event) => {
     event.preventDefault();
+    // eslint-disable-next-line no-console
     console.log("Submitted values are: ", event.target.values);
   };
 

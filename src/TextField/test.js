@@ -20,6 +20,7 @@ describe('Password Field Test', () => {
 
   it('Test text field with onChange function property', () => {
     const onChangeHandler = () => {
+      // eslint-disable-next-line no-console
       console.log("Test console log!");
     };
     const textField = renderer.create(<TextField name="username" onChange={onChangeHandler} />).toJSON();

@@ -23,6 +23,9 @@ exports[`Form Test Form with multiple fields in it 1`] = `
     type="date"
     value="2019-06-26"
   />
+  <button
+    onClick={[Function]}
+  />
 </form>
 `;
 

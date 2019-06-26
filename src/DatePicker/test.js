@@ -20,6 +20,7 @@ describe('Password Field Test', () => {
 
   it('Test date picker field with onChange function', () => {
     const onChangeHandler = () => {
+      // eslint-disable-next-line no-console
       console.log("Test console log!");
     };
     const datePicker = renderer.create(<DatePicker name="birthday" onChange={onChangeHandler} />).toJSON();
