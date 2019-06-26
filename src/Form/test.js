@@ -1,9 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Form from './index';
-import TextField from "../TextField";
-import PasswordField from "../PasswordField";
-import DatePicker from '../DatePicker';
+import { Form, TextField, Button, DatePicker, PasswordField } from "../";
 
 describe('Form Test', () => {
 
@@ -23,6 +20,7 @@ describe('Form Test', () => {
       <TextField name="username" placeholder="Username"/>
       <PasswordField name="password" placeholder="email" />
       <DatePicker name="birthday" />
+      <Button onClick={() => { console.log('Button has been clicked!') }}/>
     </Form>).toJSON();
     expect(form).toMatchSnapshot();
   });
