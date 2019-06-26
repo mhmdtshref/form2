@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css","App.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,SAAU,CACV,sBACF,CCFA,WACE,SAAU,CACV,UAAW,CACX,gBACF","file":"main.d9a8887b.chunk.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0;\n  font-family: sans-serif;\n}\n","/* App.css Styles */\n\n.textField {\n  width: 30%;\n  height: 3vh;\n  margin: 0.5vh 35vw;\n}\n"]}
