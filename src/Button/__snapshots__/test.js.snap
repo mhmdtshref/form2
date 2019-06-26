@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Field Test Test button with onClick function property 1`] = `
+<button
+  name="button"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Button Field Test Test button with value using inner text value 1`] = `
+<button
+  name="button"
+>
+  Click me!
+</button>
+`;
+
+exports[`Button Field Test Test button with value using value property 1`] = `
+<button
+  name="button"
+  value="Click me!"
+>
+  Click me!
+</button>
+`;
+
+exports[`Button Field Test Test natural button 1`] = `
+<button
+  name="button"
+/>
+`;
