@@ -1,7 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Form from './index';
-import TextField from "../TextField/index";
+import TextField from "../TextField";
+import PasswordField from "../PasswordField";
+import DatePicker from '../DatePicker';
 
 describe('Form Test', () => {
 
@@ -19,7 +21,8 @@ describe('Form Test', () => {
   it('Form with multiple fields in it', () => {
     const form = renderer.create(<Form>
       <TextField name="username" placeholder="Username"/>
-      <TextField name="email" placeholder="email" />
+      <PasswordField name="password" placeholder="email" />
+      <DatePicker name="birthday" />
     </Form>).toJSON();
     expect(form).toMatchSnapshot();
   });
