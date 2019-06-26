@@ -1,6 +1,6 @@
 {
   "name": "form2",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "React component to let you use form without use component state",
   "author": "mhmdtshref",
   "license": "MIT",
