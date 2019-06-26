@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Test Form with multiple fields in it 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    name="username"
+    onChange={[Function]}
+    placeholder="Username"
+    value=""
+  />
+  <input
+    name="email"
+    onChange={[Function]}
+    placeholder="email"
+    value=""
+  />
+</form>
+`;
+
+exports[`Form Test Form with one field in it 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    name="username"
+    onChange={[Function]}
+    value=""
+  />
+</form>
+`;
