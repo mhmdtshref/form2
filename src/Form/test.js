@@ -16,11 +16,13 @@ describe('Form Test', () => {
   });
 
   it('Form with multiple fields in it', () => {
+    // eslint-disable-next-line no-console
+    const onClickHandler = () => { console.log('Button has been clicked!') };
     const form = renderer.create(<Form>
       <TextField name="username" placeholder="Username"/>
       <PasswordField name="password" placeholder="email" />
       <DatePicker name="birthday" />
-      <Button onClick={() => { console.log('Button has been clicked!') }}/>
+      <Button onClick={onClickHandler}/>
     </Form>).toJSON();
     expect(form).toMatchSnapshot();
   });

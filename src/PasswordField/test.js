@@ -21,6 +21,7 @@ describe('Password Field Test', () => {
 
   it('Test password field with onChange function', () => {
     const onChangeHandler = () => {
+      // eslint-disable-next-line no-console
       console.log("Test console log!");
     };
     const passwordField = renderer.create(<PasswordField name="password" onChange={onChangeHandler} />).toJSON();
