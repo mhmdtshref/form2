@@ -11,10 +11,17 @@ exports[`Form Test Form with multiple fields in it 1`] = `
     value=""
   />
   <input
-    name="email"
+    name="password"
     onChange={[Function]}
     placeholder="email"
+    type="password"
     value=""
+  />
+  <input
+    name="birthday"
+    onChange={[Function]}
+    type="date"
+    value="2019-06-26"
   />
 </form>
 `;

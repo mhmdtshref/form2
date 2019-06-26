@@ -10,7 +10,6 @@ class Form extends Component {
 
   setStateValue = (name, value) => {
     this.setState((prevState) => ({ values: {...prevState.values, [name]: value }}), () => {
-      console.log("Submitted values are:", this.state);
     })
   };
 
