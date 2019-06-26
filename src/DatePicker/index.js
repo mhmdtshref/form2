@@ -4,7 +4,7 @@ class DatePicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
+      value: (new Date()).toISOString().split('T')[0],
     };
   }
 
@@ -19,6 +19,7 @@ class DatePicker extends Component {
     let newProps = {...props};
     delete newProps.onChange;
     delete newProps.formstate;
+    delete newProps.value;
     return newProps;
   };
 
