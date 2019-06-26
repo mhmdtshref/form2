@@ -5,7 +5,7 @@ exports[`Password Field Test Test date picker field with default value property 
   name="birthday"
   onChange={[Function]}
   type="date"
-  value="1996-07-26"
+  value="2019-06-26"
 />
 `;
 
@@ -14,7 +14,7 @@ exports[`Password Field Test Test date picker field with onChange function 1`] =
   name="birthday"
   onChange={[Function]}
   type="date"
-  value=""
+  value="2019-06-26"
 />
 `;
 
@@ -23,6 +23,6 @@ exports[`Password Field Test Test natural date picker field 1`] = `
   name="birthday"
   onChange={[Function]}
   type="date"
-  value=""
+  value="2019-06-26"
 />
 `;

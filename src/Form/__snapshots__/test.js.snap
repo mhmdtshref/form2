@@ -21,7 +21,7 @@ exports[`Form Test Form with multiple fields in it 1`] = `
     name="birthday"
     onChange={[Function]}
     type="date"
-    value=""
+    value="2019-06-26"
   />
 </form>
 `;
