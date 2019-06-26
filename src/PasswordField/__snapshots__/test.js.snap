@@ -23,6 +23,7 @@ exports[`Password Field Test Test password field with placeholder property 1`] =
   name="password"
   onChange={[Function]}
   placeholder="Type your password..."
+  type="password"
   value=""
 />
 `;

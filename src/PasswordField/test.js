@@ -15,7 +15,7 @@ describe('Password Field Test', () => {
   });
 
   it('Test password field with placeholder property', () => {
-    const passwordField = renderer.create(<TextField name="password" placeholder="Type your password..." />).toJSON();
+    const passwordField = renderer.create(<PasswordField name="password" placeholder="Type your password..." />).toJSON();
     expect(passwordField).toMatchSnapshot();
   });
 
