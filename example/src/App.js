@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Form, TextField } from 'form2'
+import { Form, TextField, PasswordField } from 'form2'
 import './App.css'
 
 export default class App extends Component {
@@ -15,7 +15,7 @@ export default class App extends Component {
       <div>
         <Form onSubmit={this.onSubmit}>
           <TextField placeholder="Type your name..." name="username" />
-          <TextField placeholder="Type your email..." name="email" />
+          <PasswordField placeholder="Type new password..." name="email" />
           <button>my button</button>
         </Form>
       </div>
