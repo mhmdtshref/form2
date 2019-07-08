@@ -4,8 +4,8 @@ exports[`Password Field Test Test date picker field with default value property 
 <input
   name="birthday"
   onChange={[Function]}
-  type="date"
-  value="2019-07-08"
+  type="datetime-local"
+  value="2019-07-08T14:47:37.530Z"
 />
 `;
 
@@ -13,8 +13,8 @@ exports[`Password Field Test Test date picker field with onChange function 1`] =
 <input
   name="birthday"
   onChange={[Function]}
-  type="date"
-  value="2019-07-08"
+  type="datetime-local"
+  value="2019-07-08T14:47:37.531Z"
 />
 `;
 
@@ -22,7 +22,7 @@ exports[`Password Field Test Test natural date picker field 1`] = `
 <input
   name="birthday"
   onChange={[Function]}
-  type="date"
-  value="2019-07-08"
+  type="datetime-local"
+  value="2019-07-08T14:47:37.523Z"
 />
 `;
