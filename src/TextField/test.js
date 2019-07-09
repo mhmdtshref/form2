@@ -1,6 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import TextField from './index';
+import Form from '../Form';
+import { shallow } from 'enzyme';
+
 
 describe('Password Field Test', () => {
 
@@ -9,12 +12,20 @@ describe('Password Field Test', () => {
   });
 
   it('Test natural text field', () => {
-    const textField = renderer.create(<TextField name="username" />).toJSON();
+      const textField = shallow(
+          <Form>
+              <TextField name="username" />
+          </Form>
+      );
     expect(textField).toMatchSnapshot();
   });
 
   it('Test text field with placeholder property', () => {
-    const textField = renderer.create(<TextField name="username" placeholder="Type your name..." />).toJSON();
+    const textField = shallow(
+        <Form>
+            <TextField name="username" placeholder="Type your name..." />
+        </Form>
+    );
     expect(textField).toMatchSnapshot();
   });
 
@@ -23,7 +34,11 @@ describe('Password Field Test', () => {
       // eslint-disable-next-line no-console
       console.log("Test console log!");
     };
-    const textField = renderer.create(<TextField name="username" onChange={onChangeHandler} />).toJSON();
+    const textField = shallow(
+        <Form>
+            <TextField name="username" onChange={onChangeHandler} />
+        </Form>
+    );
     expect(textField).toMatchSnapshot();
   });
 });

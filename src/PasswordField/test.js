@@ -1,7 +1,7 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import PasswordField from './index';
-import TextField from "../TextField";
+import Form from "../Form";
 
 describe('Password Field Test', () => {
 
@@ -10,12 +10,20 @@ describe('Password Field Test', () => {
   });
 
   it('Test natural password field', () => {
-    const passwordField = renderer.create(<PasswordField name="password" />).toJSON();
+    const passwordField = shallow(
+        <Form>
+            <PasswordField name="password" />
+        </Form>
+    );
     expect(passwordField).toMatchSnapshot();
   });
 
   it('Test password field with placeholder property', () => {
-    const passwordField = renderer.create(<PasswordField name="password" placeholder="Type your password..." />).toJSON();
+    const passwordField = shallow(
+        <Form>
+            <PasswordField name="password" placeholder="Type your password..." />
+        </Form>
+    );
     expect(passwordField).toMatchSnapshot();
   });
 
@@ -24,7 +32,11 @@ describe('Password Field Test', () => {
       // eslint-disable-next-line no-console
       console.log("Test console log!");
     };
-    const passwordField = renderer.create(<PasswordField name="password" onChange={onChangeHandler} />).toJSON();
+    const passwordField = shallow(
+        <Form>
+            <PasswordField name="password" onChange={onChangeHandler} />
+        </Form>
+    );
     expect(passwordField).toMatchSnapshot();
   });
 });
