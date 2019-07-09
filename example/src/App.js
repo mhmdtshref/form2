@@ -16,10 +16,10 @@ export default class App extends Component {
       <div>
         <Form onSubmit={this.onSubmit}>
           <TextField placeholder="Type your name..." name="username" />
-          <PasswordField placeholder="Type new password..." name="email" />
+          <PasswordField placeholder="Type new password..." name="password" />
           <DatePicker name="birthday" />
-          <DateTimePicker name="myTime" />
-          <Button value="Click me!" />
+          <DateTimePicker name="meetingTime" />
+          <Button value="Submit" />
         </Form>
       </div>
     )

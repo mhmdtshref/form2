@@ -23,6 +23,10 @@ class DatePicker extends Component {
     return newProps;
   };
 
+  componentDidMount() {
+      this.props.formstate(this.props.name, this.state.value);
+  }
+
   render() {
     return <input type='date' value={this.state.value} onChange={this.onChange} {...this.generateProps(this.props)} />;
   }
