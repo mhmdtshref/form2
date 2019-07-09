@@ -4,7 +4,7 @@ class DateTimePicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: (new Date()).toISOString(),
+      value: this.props.value || this.dateToDateTime(new Date()),
     };
   }
 
@@ -22,6 +22,15 @@ class DateTimePicker extends Component {
     delete newProps.value;
     return newProps;
   };
+
+  dateToDateTime = (date) => {
+      return date.toISOString().slice(0,16);
+  };
+
+
+  componentDidMount() {
+      this.props.formstate(this.props.name, this.props.value || this.dateToDateTime(new Date()));
+  }
 
     render() {
     return <input type='datetime-local' value={this.state.value} onChange={this.onChange} {...this.generateProps(this.props)} />;

@@ -4,7 +4,7 @@ class PasswordField extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
+      value: this.props.value || '',
     };
   }
 
@@ -21,6 +21,10 @@ class PasswordField extends Component {
     delete newProps.formstate;
     return newProps;
   };
+
+  componentDidMount() {
+      this.props.formstate(this.props.name, this.state.value);
+  }
 
   render() {
     return <input type="password" value={this.state.value} onChange={this.onChange} {...this.generateProps(this.props)} />;

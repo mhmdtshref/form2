@@ -4,7 +4,7 @@ class TextField extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
+      value: this.props.value || '',
     };
   }
 
@@ -22,7 +22,11 @@ class TextField extends Component {
     return newProps;
   };
 
-  render() {
+  componentDidMount() {
+      this.props.formstate(this.props.name, this.state.value);
+  }
+
+    render() {
     return <input value={this.state.value} onChange={this.onChange} {...this.generateProps(this.props)} />;
   }
 }
