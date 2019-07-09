@@ -26,7 +26,7 @@ And you can create the form in the rendered JSX by, and add onSubmit action for 
 </Form>
 ```
 
-To be able to get values inside onSubmit function, you have to use our components inside the components (and don't miss to import it with the `Form` component)
+To be able to get values inside onSubmit function, you have to use our components inside the components (and don't miss to import it with the `Form` component), and the `name` property is required to used to name the keys of onSubmit values object:
 ```typescript jsx
 <Form onSubmit={(event) => { /* Use the form fields values by event.target.values */ }}>
     <TextField name="username" />
@@ -69,6 +69,16 @@ export default class TestComponent extends Component {
  ```typescript jsx
   <TextField name="username" placeholder="Type Username..." />
 ```
+
+## Advanced
+
+### Default values
+You can add default values to fields by adding `value` property to any field component.
+```typescript jsx
+<DatePicker name="birthday" value="2019-07-26" />
+```
+
+
 ## License
 
 MIT © [mhmdtshref](https://github.com/mhmdtshref)
