@@ -1,42 +1,438 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form Test Form with multiple fields in it 1`] = `
-<form
-  onSubmit={[Function]}
->
-  <input
-    name="username"
-    onChange={[Function]}
-    placeholder="Username"
-    value=""
-  />
-  <input
-    name="password"
-    onChange={[Function]}
-    placeholder="email"
-    type="password"
-    value=""
-  />
-  <input
-    name="birthday"
-    onChange={[Function]}
-    type="date"
-    value="2019-07-08"
-  />
-  <button
-    onClick={[Function]}
-  />
-</form>
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "name": "username",
+          "placeholder": "Username",
+          "value": "",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "name": "password",
+            "placeholder": "email",
+            "type": "password",
+            "value": "",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {
+              "name": "birthday",
+              "type": "date",
+              "value": "2019-07-10",
+            },
+            "children": Array [],
+            "name": "input",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {},
+              "children": Array [],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "name": undefined,
+              "type": undefined,
+              "value": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "name": undefined,
+              "type": undefined,
+              "value": undefined,
+            },
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "placeholder": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "placeholder": undefined,
+          "value": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "name": "password",
+          "placeholder": "email",
+          "type": "password",
+          "value": "",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "name": "birthday",
+            "type": "date",
+            "value": "2019-07-10",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {},
+            "children": Array [],
+            "name": "button",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "name": "username",
+            "placeholder": "Username",
+            "value": "",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "value": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "placeholder": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "placeholder": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "name": "birthday",
+          "type": "date",
+          "value": "2019-07-10",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {},
+          "children": Array [],
+          "name": "button",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "name": "password",
+            "placeholder": "email",
+            "type": "password",
+            "value": "",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {
+              "name": "username",
+              "placeholder": "Username",
+              "value": "",
+            },
+            "children": Array [],
+            "name": "input",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "name": undefined,
+              "placeholder": undefined,
+              "value": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "name": undefined,
+              "placeholder": undefined,
+              "value": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {},
+        "children": Array [],
+        "name": "button",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "name": "birthday",
+            "type": "date",
+            "value": "2019-07-10",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {
+              "name": "password",
+              "placeholder": "email",
+              "type": "password",
+              "value": "",
+            },
+            "children": Array [],
+            "name": "input",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "name": "username",
+                "placeholder": "Username",
+                "value": "",
+              },
+              "children": Array [],
+              "name": "input",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "name": undefined,
+                "placeholder": undefined,
+                "value": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "name": undefined,
+                "placeholder": undefined,
+                "value": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "name": undefined,
+              "placeholder": undefined,
+              "type": undefined,
+              "value": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "name": undefined,
+              "placeholder": undefined,
+              "type": undefined,
+              "value": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "form",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
 `;
 
 exports[`Form Test Form with one field in it 1`] = `
-<form
-  onSubmit={[Function]}
->
-  <input
-    name="username"
-    onChange={[Function]}
-    value=""
-  />
-</form>
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "name": "username",
+          "value": "",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "value": undefined,
+        },
+      },
+    ],
+    "name": "form",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
 `;

@@ -5,7 +5,7 @@
 ##Overview
 When you create form in React, You need to use state to handle values changes. This package helps you creating form and handle it's values on submit without need to set values to state. All what you have to do, is to call `onSubmit`, and the event.target.values will be an object contains fields names and values.
 
-[![NPM](https://img.shields.io/badge/version-2.5.0-green.svg)](https://www.npmjs.com/package/form2) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/badge/version-2.5.0-green.svg)](https://www.npmjs.com/package/form2) ![test coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 

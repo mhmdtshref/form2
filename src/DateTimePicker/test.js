@@ -1,6 +1,8 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render, mount } from 'enzyme';
+import jestMock from 'jest-mock';
 import DateTimePicker from "./index";
+import Form from "../Form";
 
 describe('Password Field Test', () => {
 
@@ -8,22 +10,63 @@ describe('Password Field Test', () => {
     expect(DateTimePicker).toBeTruthy()
   });
 
+
   it('Test natural date picker field', () => {
-    const dateTimePicker = renderer.create(<DateTimePicker name="birthday" />).toJSON();
+    const dateTimePicker = render(
+        <Form>
+            <DateTimePicker name="birthday" value="1996-07-26" />
+        </Form>
+    );
     expect(dateTimePicker).toMatchSnapshot();
   });
+
 
   it('Test date picker field with default value property', () => {
-    const datePicker = renderer.create(<DateTimePicker name="birthday" value="1996-07-26" />).toJSON();
-    expect(datePicker).toMatchSnapshot();
-  });
-
-  it('Test date picker field with onChange function', () => {
-    const onChangeHandler = () => {
-      // eslint-disable-next-line no-console
-      console.log("Test console log!");
-    };
-    const dateTimePicker = renderer.create(<DateTimePicker name="birthday" onChange={onChangeHandler} />).toJSON();
+    const dateTimePicker = render(
+        <Form>
+            <DateTimePicker name="birthday" value="1996-07-26" />
+        </Form>
+    );
     expect(dateTimePicker).toMatchSnapshot();
   });
+
+
+  it('Test date picker field onChange', () => {
+    const event = {
+        target: {
+            value: '2019-07-05'
+        }
+    };
+
+    const dateTimePickerComponent = mount(
+        <Form>
+            <DateTimePicker name="birthday" value="1996-07-26" />
+        </Form>
+    );
+
+    const dateTimePicker = dateTimePickerComponent.find('input').first();
+    dateTimePicker.simulate('change', event);
+  });
+
+
+  it('Test date picker field with on onChange in properties', () => {
+        const onChangeHandler = jestMock.fn();
+        const event = {
+            target: {
+                value: '2019-07-05'
+            }
+        };
+
+        const dateTimePickerComponent = mount(
+            <Form>
+                <DateTimePicker name="birthday" onChange={onChangeHandler} />
+            </Form>
+        );
+
+        const dateTimePicker = dateTimePickerComponent.find('input').first();
+        dateTimePicker.simulate('change', event);
+
+        expect(onChangeHandler).toBeCalled();
+    });
+
 });
