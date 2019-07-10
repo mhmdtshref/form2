@@ -1,7 +1,9 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render, mount } from 'enzyme';
+import jestMock from 'jest-mock';
 import PasswordField from './index';
 import Form from "../Form";
+
 
 describe('Password Field Test', () => {
 
@@ -9,8 +11,9 @@ describe('Password Field Test', () => {
     expect(PasswordField).toBeTruthy()
   });
 
+
   it('Test natural password field', () => {
-    const passwordField = shallow(
+    const passwordField = render(
         <Form>
             <PasswordField name="password" />
         </Form>
@@ -18,8 +21,9 @@ describe('Password Field Test', () => {
     expect(passwordField).toMatchSnapshot();
   });
 
+
   it('Test password field with placeholder property', () => {
-    const passwordField = shallow(
+    const passwordField = render(
         <Form>
             <PasswordField name="password" placeholder="Type your password..." />
         </Form>
@@ -27,16 +31,37 @@ describe('Password Field Test', () => {
     expect(passwordField).toMatchSnapshot();
   });
 
-  it('Test password field with onChange function', () => {
-    const onChangeHandler = () => {
-      // eslint-disable-next-line no-console
-      console.log("Test console log!");
-    };
-    const passwordField = shallow(
-        <Form>
-            <PasswordField name="password" onChange={onChangeHandler} />
-        </Form>
-    );
-    expect(passwordField).toMatchSnapshot();
+
+  it('Test password field onChange', () => {
+      const event = {
+          target: { value: 'new value' }
+      };
+      const passwordField = mount(
+          <Form>
+              <PasswordField name="password" />
+          </Form>
+      );
+      const input = passwordField.find('input').first();
+      input.simulate('change', event);
   });
+
+
+  it('Test password field onChange', () => {
+      const onChangeHandler = jestMock.fn();
+      const event = {
+          target: { value: 'new value' }
+      };
+
+      const passwordField = mount(
+          <Form>
+              <PasswordField name="password" onChange={onChangeHandler} />
+          </Form>
+      );
+
+      const input = passwordField.find('input').first();
+      input.simulate('change', event);
+
+      expect(onChangeHandler).toBeCalled();
+  });
+
 });
