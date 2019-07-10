@@ -1,18 +1,18 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import TextField from './index';
 import Form from '../Form';
-import { shallow } from 'enzyme';
+import { render, mount } from 'enzyme';
+import jestMock from 'jest-mock';
 
-
-describe('Password Field Test', () => {
+describe('Text Field Test', () => {
 
   it('is truthy', () => {
     expect(TextField).toBeTruthy()
   });
 
+
   it('Test natural text field', () => {
-      const textField = shallow(
+      const textField = render(
           <Form>
               <TextField name="username" />
           </Form>
@@ -20,8 +20,9 @@ describe('Password Field Test', () => {
     expect(textField).toMatchSnapshot();
   });
 
+
   it('Test text field with placeholder property', () => {
-    const textField = shallow(
+    const textField = render(
         <Form>
             <TextField name="username" placeholder="Type your name..." />
         </Form>
@@ -29,16 +30,35 @@ describe('Password Field Test', () => {
     expect(textField).toMatchSnapshot();
   });
 
-  it('Test text field with onChange function property', () => {
-    const onChangeHandler = () => {
-      // eslint-disable-next-line no-console
-      console.log("Test console log!");
+
+  it('Test text field onChange', () => {
+    const event = {
+        target: { value: 'new value' }
     };
-    const textField = shallow(
+
+    const textField = mount(
         <Form>
-            <TextField name="username" onChange={onChangeHandler} />
+            <TextField name="username" />
         </Form>
     );
-    expect(textField).toMatchSnapshot();
+    const input = textField.find('input').first();
+    input.simulate('change', event);
   });
+
+
+  it('Test text field with onChange function property', () => {
+      const onChangeHandler = jestMock.fn();
+      const event = {
+          target: { value: 'new value' }
+      };
+
+      const textField = mount(
+          <Form>
+              <TextField name="username" onChange={onChangeHandler} />
+          </Form>
+      );
+      textField.find('input').first().simulate('change', event);
+      expect(onChangeHandler).toBeCalled();
+  });
+
 });
