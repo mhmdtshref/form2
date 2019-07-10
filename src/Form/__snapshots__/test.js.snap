@@ -1,334 +1,438 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form Test Form with multiple fields in it 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Form>
-    <TextField
-        name="username"
-        placeholder="Username"
-    />
-    <PasswordField
-        name="password"
-        placeholder="email"
-    />
-    <DatePicker
-        name="birthday"
-    />
-    <Button
-        onClick={[Function]}
-    />
-</Form>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <TextField
-          formstate={[Function]}
-          name="username"
-          placeholder="Username"
-/>,
-        <PasswordField
-          formstate={[Function]}
-          name="password"
-          placeholder="email"
-/>,
-        <DatePicker
-          formstate={[Function]}
-          name="birthday"
-/>,
-        <Button
-          formstate={[Function]}
-          onClick={[Function]}
-/>,
-      ],
-      "onSubmit": [Function],
-    },
-    "ref": null,
-    "rendered": Array [
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
       Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "class",
-        "props": Object {
-          "formstate": [Function],
+        "attribs": Object {
           "name": "username",
           "placeholder": "Username",
+          "value": "",
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "1",
-        "nodeType": "class",
-        "props": Object {
-          "formstate": [Function],
-          "name": "password",
-          "placeholder": "email",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "2",
-        "nodeType": "class",
-        "props": Object {
-          "formstate": [Function],
-          "name": "birthday",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "3",
-        "nodeType": "class",
-        "props": Object {
-          "formstate": [Function],
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <TextField
-            formstate={[Function]}
-            name="username"
-            placeholder="Username"
-/>,
-          <PasswordField
-            formstate={[Function]}
-            name="password"
-            placeholder="email"
-/>,
-          <DatePicker
-            formstate={[Function]}
-            name="birthday"
-/>,
-          <Button
-            formstate={[Function]}
-            onClick={[Function]}
-/>,
-        ],
-        "onSubmit": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "class",
-          "props": Object {
-            "formstate": [Function],
-            "name": "username",
-            "placeholder": "Username",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "class",
-          "props": Object {
-            "formstate": [Function],
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
             "name": "password",
             "placeholder": "email",
+            "type": "password",
+            "value": "",
           },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {
+              "name": "birthday",
+              "type": "date",
+              "value": "2019-07-10",
+            },
+            "children": Array [],
+            "name": "input",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {},
+              "children": Array [],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {},
+              "x-attribsPrefix": Object {},
+            },
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "name": undefined,
+              "type": undefined,
+              "value": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "name": undefined,
+              "type": undefined,
+              "value": undefined,
+            },
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
         },
-        Object {
-          "instance": null,
-          "key": "2",
-          "nodeType": "class",
-          "props": Object {
-            "formstate": [Function],
-            "name": "birthday",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "placeholder": undefined,
+          "value": undefined,
         },
-        Object {
-          "instance": null,
-          "key": "3",
-          "nodeType": "class",
-          "props": Object {
-            "formstate": [Function],
-            "onClick": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "form",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromError": true,
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "placeholder": undefined,
+          "value": undefined,
         },
       },
+      Object {
+        "attribs": Object {
+          "name": "password",
+          "placeholder": "email",
+          "type": "password",
+          "value": "",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "name": "birthday",
+            "type": "date",
+            "value": "2019-07-10",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {},
+            "children": Array [],
+            "name": "button",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "name": "username",
+            "placeholder": "Username",
+            "value": "",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "value": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "placeholder": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "placeholder": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "name": "birthday",
+          "type": "date",
+          "value": "2019-07-10",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {},
+          "children": Array [],
+          "name": "button",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "name": "password",
+            "placeholder": "email",
+            "type": "password",
+            "value": "",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {
+              "name": "username",
+              "placeholder": "Username",
+              "value": "",
+            },
+            "children": Array [],
+            "name": "input",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "name": undefined,
+              "placeholder": undefined,
+              "value": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "name": undefined,
+              "placeholder": undefined,
+              "value": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "placeholder": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {},
+        "children": Array [],
+        "name": "button",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "name": "birthday",
+            "type": "date",
+            "value": "2019-07-10",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {
+              "name": "password",
+              "placeholder": "email",
+              "type": "password",
+              "value": "",
+            },
+            "children": Array [],
+            "name": "input",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "name": "username",
+                "placeholder": "Username",
+                "value": "",
+              },
+              "children": Array [],
+              "name": "input",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "name": undefined,
+                "placeholder": undefined,
+                "value": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "name": undefined,
+                "placeholder": undefined,
+                "value": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "name": undefined,
+              "placeholder": undefined,
+              "type": undefined,
+              "value": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "name": undefined,
+              "placeholder": undefined,
+              "type": undefined,
+              "value": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+    ],
+    "name": "form",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
     },
-    Symbol(enzyme.__providerValues__): undefined,
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
   },
-  Symbol(enzyme.__providerValues__): Map {},
-  Symbol(enzyme.__childContext__): null,
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
 `;
 
 exports[`Form Test Form with one field in it 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Form>
-    <TextField
-        name="username"
-    />
-</Form>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <TextField
-          formstate={[Function]}
-          name="username"
-/>,
-      ],
-      "onSubmit": [Function],
-    },
-    "ref": null,
-    "rendered": Array [
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
       Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "class",
-        "props": Object {
-          "formstate": [Function],
+        "attribs": Object {
           "name": "username",
+          "value": "",
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "value": undefined,
+        },
       },
     ],
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <TextField
-            formstate={[Function]}
-            name="username"
-/>,
-        ],
-        "onSubmit": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "class",
-          "props": Object {
-            "formstate": [Function],
-            "name": "username",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+    "name": "form",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
       ],
-      "type": "form",
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
     },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromError": true,
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    Symbol(enzyme.__providerValues__): undefined,
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
   },
-  Symbol(enzyme.__providerValues__): Map {},
-  Symbol(enzyme.__childContext__): null,
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
 `;
