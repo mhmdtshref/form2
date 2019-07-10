@@ -1,348 +1,129 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Password Field Test Test date picker field with default value property 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Form>
-    <DateTimePicker
-        name="birthday"
-        value="1996-07-26"
-    />
-</Form>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <DateTimePicker
-          formstate={[Function]}
-          name="birthday"
-          value="1996-07-26"
-/>,
-      ],
-      "onSubmit": [Function],
-    },
-    "ref": null,
-    "rendered": Array [
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
       Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "class",
-        "props": Object {
-          "formstate": [Function],
+        "attribs": Object {
           "name": "birthday",
+          "type": "datetime-local",
           "value": "1996-07-26",
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
       },
     ],
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <DateTimePicker
-            formstate={[Function]}
-            name="birthday"
-            value="1996-07-26"
-/>,
-        ],
-        "onSubmit": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "class",
-          "props": Object {
-            "formstate": [Function],
-            "name": "birthday",
-            "value": "1996-07-26",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "form",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromError": true,
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    Symbol(enzyme.__providerValues__): undefined,
-  },
-  Symbol(enzyme.__providerValues__): Map {},
-  Symbol(enzyme.__childContext__): null,
-}
-`;
-
-exports[`Password Field Test Test date picker field with onChange function 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Form>
-    <DateTimePicker
-        name="birthday"
-        onChange={[Function]}
-        value="1996-07-26"
-    />
-</Form>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
+    "name": "form",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
       "children": Array [
-        <DateTimePicker
-          formstate={[Function]}
-          name="birthday"
-          onChange={[Function]}
-          value="1996-07-26"
-/>,
+        [Circular],
       ],
-      "onSubmit": [Function],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
     },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "class",
-        "props": Object {
-          "formstate": [Function],
-          "name": "birthday",
-          "onChange": [Function],
-          "value": "1996-07-26",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "form",
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
   },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <DateTimePicker
-            formstate={[Function]}
-            name="birthday"
-            onChange={[Function]}
-            value="1996-07-26"
-/>,
-        ],
-        "onSubmit": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "class",
-          "props": Object {
-            "formstate": [Function],
-            "name": "birthday",
-            "onChange": [Function],
-            "value": "1996-07-26",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": "form",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromError": true,
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    Symbol(enzyme.__providerValues__): undefined,
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
   },
-  Symbol(enzyme.__providerValues__): Map {},
-  Symbol(enzyme.__childContext__): null,
 }
 `;
 
 exports[`Password Field Test Test natural date picker field 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Form>
-    <DateTimePicker
-        name="birthday"
-        value="1996-07-26"
-    />
-</Form>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "checkPropTypes": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <DateTimePicker
-          formstate={[Function]}
-          name="birthday"
-          value="1996-07-26"
-/>,
-      ],
-      "onSubmit": [Function],
-    },
-    "ref": null,
-    "rendered": Array [
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
       Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "class",
-        "props": Object {
-          "formstate": [Function],
+        "attribs": Object {
           "name": "birthday",
+          "type": "datetime-local",
           "value": "1996-07-26",
         },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
       },
     ],
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <DateTimePicker
-            formstate={[Function]}
-            name="birthday"
-            value="1996-07-26"
-/>,
-        ],
-        "onSubmit": [Function],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "0",
-          "nodeType": "class",
-          "props": Object {
-            "formstate": [Function],
-            "name": "birthday",
-            "value": "1996-07-26",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+    "name": "form",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
       ],
-      "type": "form",
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
     },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "legacyContextMode": "parent",
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getChildContext": Object {
-            "calledByRenderer": false,
-          },
-          "getDerivedStateFromError": true,
-          "getDerivedStateFromProps": Object {
-            "hasShouldComponentUpdateBug": false,
-          },
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    Symbol(enzyme.__providerValues__): undefined,
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
   },
-  Symbol(enzyme.__providerValues__): Map {},
-  Symbol(enzyme.__childContext__): null,
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
 }
 `;
